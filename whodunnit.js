@@ -11,7 +11,6 @@ const declareMurderer = function () {
 
 const verdict = declareMurderer();
 console.log(verdict); // 'The murderer is Miss Scarlet.'
-//const object scenario is defined outside the function
 
 //Episode 2
 const murderer = 'Professor Plum';
@@ -24,7 +23,7 @@ const declareMurderer = function () {
   return `The murderer is ${murderer}.`;
 };
 
-changeMurderer(); // with throw an error as const cannot be reassigned
+changeMurderer(); // will throw an error as const cannot be reassigned
 const verdict = declareMurderer();
 console.log(verdict); // 'The murderer is Profesor Plum.'
 
